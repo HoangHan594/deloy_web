@@ -47,6 +47,9 @@ app.use(
 );
 // End TinyMCE
 
+app.get("/", (req, res) => {
+    res.json("hello");
+})
 
 // Variables
 app.locals.adminPrefix = systemPrefix.adminPrefix;
